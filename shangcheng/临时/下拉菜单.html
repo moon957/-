@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<style>
+        .par{
+            margin:-8px;
+            width: 300px;
+            height: 300px;
+            background: salmon;
+        }
+        .par>span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 100px;
+           /* margin: 100px;*/
+            color: aqua;
+        }
+    </style>-->
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .out_block{
+            height: 35px;
+            width: 1500px;
+            padding: 10px;
+            background-color: #97eede;
+            float: left;
+        }
+        .menu{
+            list-style: none;
+            float: left;
+            display: block;
+            width:275px;
+            max-height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid silver;
+            background: #ffa874 !important;
+        }
+        .menu:hover{
+            cursor: pointer;
+            color: red;
+            background: white!important;
+        }
+        .menu_li:hover .menu_two{
+            display: block;
+        }
+        .menu_two{
+            list-style: none;
+            display: none;
+            color: black;
+            background:#ffa874;
+        }
+        .menu_two>li{
+            display: block;
+            padding: 10px 0 0 0;
+            height: 30px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .menu_two>li:hover{
+            background: white;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="par">
+    <span>我是文本</span>
+</div>
+<form>
+    <ul>
+        <li>
+            账号: <input name="userid" type="text"/>
+        </li>
+        <li>密码: <input name="userpwd" type="password"/></li>
+        <li><input type="submit" value="登录"/>
+        <input type="reset" value="reset"/></li>
+    </ul>
+</form>
+<table border="1" bgcolor="#ffb6c1" width="500px" align="center" cellspacing="0" cellpadding="10">
+    <caption>信息表</caption>
+    <tr align="center">
+        <td>姓名</td>
+        <td>张凯瑞</td>
+        <td>晁成</td>
+    </tr>
+    <tr align="center">
+        <td>年龄</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+    <tr align="center" bgcolor="#7fffd4">
+        <td>是否结婚</td>
+        <td colspan="2">否</td>
+    </tr>
+</table>
+<iframe name="tardate" src="http://www.runoob.com/" width="1200px" height="500px"></iframe>-->
+<ul class="out_block">
+
+        <li class="menu">首页</li>
+        <li class="menu menu_li">公司招聘
+            <ul class="menu_two">
+                <li>web前段</li>
+                <li>python</li>
+                <li>java</li>
+                <li>linux</li>
+                <li>运维</li>
+                <li>ui</li>
+            </ul>
+        </li>
+        <li class="menu">相册</li>
+        <li class="menu">了解更多</li>
+        <li class="menu">帮助</li>
+</ul>
+</body>
+</html>

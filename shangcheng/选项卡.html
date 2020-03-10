@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            width:500px;
+            height: 400px;
+            margin: auto;
+
+        }
+        .manu_c{
+            font-size:0;
+            position: relative;
+        }
+        .manu_c>li{
+            float: left;
+            border: 1px solid silver;
+            width: 100px;
+            height: 35px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 35px;
+            font-size: 16px;
+            list-style: none;
+        }
+        .manu_c>li:hover{
+            cursor: pointer;
+            color: red;
+            border-bottom: white;
+        }
+        .manu_c>li>span{
+            position: relative;
+            z-index: 9;
+            font-size: 16px;
+            width: 100px;
+            height: 35px;
+            display:inline-block;
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-left: 1px solid transparent;
+            box-sizing: border-box;
+        }
+        .manu_c>li:hover span{
+            border-top: 1px solid red;
+            border-right: 1px solid red;
+            border-left: 1px solid red;
+            border-bottom:1px solid white;
+
+        }
+        .manu_c_a{
+            position: absolute;
+            z-index: 4;
+            top:35px;
+            left:0;
+            width: 500px;
+            height: 365px;
+            border:1px solid red;
+            box-sizing: border-box;
+            display: none;
+            text-align: left;
+        }
+        .manu_c>li:hover .manu_c_a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="manu_c">
+            <li><span class="manu_c_a_b">卡一</span>
+                <div class="manu_c_a">卡一</div>
+            </li>
+            <li><span class="manu_c_a_b">卡二</span>
+                <div class="manu_c_a">卡二</div>
+            </li>
+            <li><span class="manu_c_a_b">卡三</span>
+                <div class="manu_c_a">卡三</div>
+            </li>
+            <li><span class="manu_c_a_b">卡四</span>
+                <div class="manu_c_a">卡四</div>
+            </li>
+            <li><span class="manu_c_a_b">卡五</span>
+                <div class="manu_c_a">卡五</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
